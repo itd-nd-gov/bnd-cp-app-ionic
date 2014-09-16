@@ -1,0 +1,21 @@
+.cal-date {
+  font-weight: bold;
+}
+
+.cal-detail {
+  padding-left: 15px;
+  font-size: 0.9em;
+}
+
+.cal-time {
+  width: 65px;
+  display: block;
+  float: left;
+}
+
+.cal-title {
+  /*width: 75px;*/
+  display: block;
+  padding-left: 65px;
+  /*float: right;*/
+}

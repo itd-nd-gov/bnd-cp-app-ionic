@@ -1,0 +1,24 @@
+<ion-view title="Event Calendar">
+  <ion-content class="padding">
+
+  <ul class="cal-group" ng-repeat="dategroup in results">
+
+    <li class="cal-date">{{dategroup[0] | date:'EEE MMM d, yyyy'}}</li>
+
+    <li>
+
+      <ul class="cal-detail" ng-repeat="entry in dategroup[1]">
+        <li>
+          <span class="cal-time">{{entry.gd$when[0].startTime | date:'h:mm a'| lowercase}}</span>
+          <span class="cal-title">
+            <a href="#detail/{{entry.gCal$uid.value}}">{{entry.title.$t}}</a>
+          </span>
+        </li>
+      </ul>
+
+    </li>
+
+  </ul>
+
+  </ion-content>
+</ion-view>
