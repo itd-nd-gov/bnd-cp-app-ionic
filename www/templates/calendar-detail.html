@@ -1,17 +1,20 @@
 <ion-view title="Event Detail">
-  <ion-content class="padding">
+    <ion-content class="padding">
 
-    <h3>{{entry.title.$t}}</h3>
+        <div class="list card padding">
 
-    <h4>{{entry.gd$when[0].startTime | date:'EEE, MMMM d, yyyy'}}</h4>
+            <h3>{{entry.title.$t}}</h3>
 
-	<br />
+            <h4>{{entry.gd$when[0].startTime | date:'EEE, MMMM d, yyyy'}}</h4>
 
-    <div class="row">
-      <div class="col">Where:</div>
-      <div class="col col-90">{{entry.gd$where[0].valueString}}</div>
-    </div>
+            <br />
 
+            <div class="row">
+                <div class="col" style="white-space: nowrap;">Where:</div>
+                <div class="col col-80">{{entry.gd$where[0].valueString}}</div>
+            </div>
 
-  </ion-content>
+        </div>
+
+    </ion-content>
 </ion-view>
