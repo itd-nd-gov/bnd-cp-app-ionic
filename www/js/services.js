@@ -2,7 +2,7 @@
 
 var googleCalURL = "https://www.google.com/calendar/feeds/ejb2vbgf9le25fd1rpm5tmqmn8@group.calendar.google.com/public/full?orderby=starttime&sortorder=ascending&max-results=30&futureevents=true&alt=json";
 
-angular.module('starter.services', ['ngResource'])
+angular.module('starter.services', [])
 
 .factory('Data', function ($q, $http) {
 
