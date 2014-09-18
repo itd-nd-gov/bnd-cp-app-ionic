@@ -1,21 +1,19 @@
+.cal-group {
+  padding: 8px 0 0 0;
+  font-size: 1.1em;
+}
 .cal-date {
   font-weight: bold;
 }
-
 .cal-detail {
-  padding-left: 15px;
-  font-size: 0.9em;
+  padding: 3px 0 0 15px;
 }
-
 .cal-time {
   width: 65px;
   display: block;
   float: left;
 }
-
 .cal-title {
-  /*width: 75px;*/
   display: block;
   padding-left: 65px;
-  /*float: right;*/
 }

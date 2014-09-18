@@ -1,20 +1,25 @@
 <ion-view title="Event Detail">
-    <ion-content class="padding">
+  <ion-content class="padding">
 
-        <div class="list card padding">
+    <div class="list card padding">
 
-            <h3>{{entry.title.$t}}</h3>
+      <h3>{{entry.title.$t}}</h3>
 
-            <h4>{{entry.gd$when[0].startTime | date:'EEE, MMMM d, yyyy'}}</h4>
+      <h4>{{entry.gd$when[0].startTime | date:'EEE, MMMM d, yyyy'}}
 
-            <br />
+            <span ng-if="entry.gd$when[0].startTime.length > 10">
+              - {{entry.gd$when[0].startTime | date:'h:mm a'| lowercase}}
+            </span>
+      </h4>
 
-            <div class="row">
-                <div class="col" style="white-space: nowrap;">Where:</div>
-                <div class="col col-80">{{entry.gd$where[0].valueString}}</div>
-            </div>
+      <br />
 
-        </div>
+      <div ng-if="entry.gd$where[0].valueString" class="row">
+        <div class="col" style="white-space: nowrap;">Where:</div>
+        <div class="col col-80">{{entry.gd$where[0].valueString}}</div>
+      </div>
 
-    </ion-content>
+    </div>
+
+  </ion-content>
 </ion-view>
